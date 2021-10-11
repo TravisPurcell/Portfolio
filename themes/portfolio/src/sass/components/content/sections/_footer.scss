@@ -1,0 +1,68 @@
+/* # Footer
+------------------------------*/
+
+footer {
+    background-color: $color__footer;
+    border-top: 5px solid $color__bg-alt;
+
+    .logo {
+        color: $color__text-main;
+        font-size: 45px;
+        font-family: $alianza;
+        line-height: 1;
+      
+        &:hover {
+          color: $color__text-main;
+        }
+      
+        &__subtitle {
+          color: $color__blue;
+          font-size: 20px;
+          font-family: $alianza;
+          font-weight: bold;
+      
+          &.active {
+            color: $color__blue;
+          }
+        }
+      }
+
+    .logo-container__footer {
+        margin: 3.5em 0 2em;
+    }
+
+    .contactInfo {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+
+      p {
+        margin: 0;
+        margin-bottom: 1em;
+      }
+    }
+
+    .email {
+
+      a {
+        font-size: 18px;
+        font-size: 1.8rem;
+        color: $color__black;
+      }
+    }
+
+    .github {
+      width: 48px;
+      max-width: 48px;
+    }
+
+    .disclosure {
+      color: $color__text-main;
+      font-size: 14px;
+      font-size: 1.4rem;
+    }
+}
+
+
+/*End*/
+

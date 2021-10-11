@@ -1,0 +1,44 @@
+/* Table of Contents
+ * 
+ * # Imports
+ * # Variables
+ * # Bootstrap Overrides
+ * # Main Styles
+ * # Header
+ * # Jumbotron
+ * # Sections
+ * # Footer
+ * # Modal Speedbump
+ */
+ 
+ /* # Imports
+------------------------------*/
+
+@import "abstracts/abstracts";
+@import "layouts/layouts";
+@import "base/base";
+@import "components/components";
+@import "slick";
+
+/* # Main Styles
+------------------------------*/
+
+// Carousel bug
+.outer-wrapper {
+    overflow: hidden;
+}
+
+#comments {
+    display: none;
+}
+
+/* Utility Classes
+------------------------------*/
+
+.padding-none {
+    padding: 0;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}

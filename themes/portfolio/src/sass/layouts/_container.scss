@@ -1,0 +1,69 @@
+ /* # Bootstrap Overrides
+------------------------------*/
+
+.nopadding {
+    padding: 0;
+}
+
+.padding-none-left {
+    padding-left: 0;
+}
+
+.col-full {
+    padding: 0;
+}
+
+.container-fluid.full {
+    max-width: 1660px ;
+	margin: 0 auto;
+}
+
+.container-fluid.full.nopadding {
+    padding: 0;
+
+    .row {
+        margin: 0;
+    }
+}
+
+.container-fluid.page {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.container-fluid.grid {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.container-fluid.post {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-fluid.mid {
+	max-width: 1030px;
+	margin: 0 auto;
+}
+
+.container-fluid.narrow {
+    max-width: 815px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1229px) {
+    .container-fluid {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.d-xl-block {
+    display: none !important
+}
+
+@media (min-width: 1440px) {
+    .d-xl-block {
+        display: block !important
+    }
+}

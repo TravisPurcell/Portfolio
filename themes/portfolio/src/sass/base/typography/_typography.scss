@@ -1,0 +1,13 @@
+$barlow: 'Barlow', sans-serif;
+
+$font__main: $barlow;
+
+
+a {
+    color: $color__panel;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
