@@ -1,0 +1,14 @@
+p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: $alianza;
+    color: $color__white;
+}
+
+@media (min-width: 768px) {
+
+    p {
+        font-size: 22px;
+        font-size: 2rem;
+    }
+}

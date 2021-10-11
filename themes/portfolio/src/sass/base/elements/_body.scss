@@ -1,0 +1,356 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#page {
+    background: $color__bg;
+
+    &.active {
+        background: $color__bg;
+    }
+}
+
+.fullScreen {
+    padding-top: 7.5em;
+    height: 75vh;
+    background-color: #fff;
+
+    p {
+        font-size: 24px;
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .fullScreen {
+        display: none;
+    }
+}
+
+body {
+    background-color: $color__bg-alt;
+}
+
+section {
+    padding: 4em 0;
+}
+
+.hero {
+    background-image: url('http://portfolio.test/wp-content/uploads/2021/09/hero-1-scaled.jpg');
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+
+    .display-block {
+        display: block;
+    }
+
+    .nav-wrapper {
+        margin-bottom: 2em;
+    }
+
+    @media (max-width: 1399px) {
+        display: none;
+    }
+}
+
+/* Modal 
+-------------------------*/
+
+.modal {
+
+    &-header .close {
+        font-size: 30px;
+        font-size: 3rem;
+    }
+
+    &-content {
+        background-color: $color__bg;
+    }
+
+    &-title {
+        font-family: $font__main;
+        color: $color__text-main;
+        font-size: 20px;
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    &-body {
+        padding: 2em 3em;
+        border: none;
+        border-top: 1px solid $color__gray;
+    }
+
+    &-footer {
+        display: block;
+    }
+
+    p {
+        font-family: $font__main;
+        color: $color__text-main;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .description {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+
+    @media (min-width: 768px) {
+
+        &-title {
+            font-size: 22px;
+            font-size: 2.2rem;
+        }
+
+        &-dialog {
+            min-width: 500px;
+        }
+    }
+
+    @media (min-width: 992px) {
+
+        &-title {
+            font-size: 25px;
+            font-size: 2.5rem;
+        }
+
+        &-dialog {
+            min-width: 750px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        &-title {
+            font-size: 28px;
+            font-size: 2.8rem;
+        }
+
+        &-dialog {
+            min-width: 1000px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+
+        &-title {
+            font-size: 30px;
+            font-size: 3rem;
+        }
+
+        &-dialog {
+            min-width: 1230px;
+        }
+    }
+}
+
+.modal-title {
+    text-decoration: none !important;
+}
+
+.modal-footer {
+    border-top: 1px solid $color__lgray;
+}
+
+.moda-footer.flex {
+    display: flex;
+}
+
+.modalChoice {
+    display: none;
+}
+
+.modalChoiceClients {
+
+    .clientContent {
+        padding: 3em;
+    }
+}
+
+.modalChoice.active {
+    display: block;
+}
+
+/* Modal Dashboard
+-------------------------*/
+
+.dashboard {
+    padding: 1.5em 1em 1em;
+
+    .description {
+        font-size: 20px;
+        font-size: 2rem;
+        margin-bottom: 2em;
+    }
+
+    h2 {
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: .2em;
+    }
+
+    .calculator {
+        width: 100%;
+        display: flex;
+        margin-bottom: 4em;
+
+        form {
+            display: flex;
+            max-width: 490px;
+            flex-wrap: wrap;
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            margin-right: 3em;
+
+            &.email {
+                flex-basis: 100%;
+                margin-top: 2em;
+            }
+        }
+
+        label {
+            font-size: 16px;
+            font-size: 1.6rem;
+        }
+
+        select, fieldset input {
+            font-size: 20px;
+            font-size: 2rem;
+            border: none;
+            border-bottom: 2px solid $color__bg-alt;
+            background-color: $color__bg;
+            color: $color--text-main;
+            margin-top: 0;
+        }
+
+        fieldset input {
+            padding-left: .35em;
+        }
+
+        input {
+            margin-top: 1.25em;
+            color: #fff;
+            font-size: 20px;
+            font-size: 2rem;
+            background-color: $color__cta;
+            border: 3px solid $color__cta;
+            border-radius: 2px;
+            padding: .35em 2em .5em;
+            opacity: 0.75;
+            
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .panel_wrapper {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &.flex {
+            display: flex;
+        }
+    }
+
+    .panel {
+        display: flex;
+        flex-basis: 30%;
+        padding: 1em;
+        margin-bottom: 2em;
+        background-color: $color__panel;
+        border-radius: 15px;
+        opacity: 0.7;
+
+        &.opague {
+            opacity: 1;
+        }
+
+        &_left {
+            flex-basis: 50%;
+        }
+
+        &_right {
+
+            p {
+                transform: rotate(33deg);
+                margin-top: 1.25em;
+                font-size: 28px;
+                font-size: 2.8rem;
+                border-bottom: 2px solid #fff;
+            }
+        }
+
+        &_center {
+            flex-basis: 100%;
+        }
+
+        .number {
+            font-size: 5em;
+            font-style: italic;
+            border-bottom: 2px solid #fff;
+            flex-basis: 100%;
+        }
+
+        .salary {
+            font-size: 3em;
+            font-style: italic;
+            border-bottom: 2px solid #fff;
+            margin-top: 1em;
+        }
+
+        .state {
+            font-size: 3em;
+            font-style: italic;
+            border-bottom: 2px solid #fff;
+            margin-top: 1em;
+        }
+
+        .profession {
+            margin-left: 1em;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+}
+
+.contactInfo {
+    
+    p {
+        text-align: center;
+    }
+}
+
+.demo-github {
+    display: flex;
+    
+    img {
+        transform: scale(.7);
+    }
+
+    p {
+        align-self: center;
+    }
+    
+    a {
+        text-decoration: underline;
+        color: $color__orchid;
+        font-weight: bold;
+
+        &:hover {
+            color: $color__panel;
+        }
+    }
+}
