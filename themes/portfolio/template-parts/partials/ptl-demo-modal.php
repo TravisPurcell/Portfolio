@@ -22,7 +22,7 @@
               </div>
               <div class="modal-footer">
               <div class="contactInfo flex">
-                  <p><a href="https://github.com/TravisPurcell" target="_blank"><img class="github" src="<?php echo get_template_directory_uri(); ?>/dist/images/github.png" alt="Go to Github profile"/></a></p>
+                  <p><a href="https://github.com/TravisPurcell/Portfolio/tree/main/themes/portfolio" target="_blank"><img class="github" src="<?php echo get_template_directory_uri(); ?>/dist/images/github.png" alt="Go to Github profile"/></a></p>
                   <p class="email"><a href="mailto:travis.n.purcell@gmail.com">travis.n.purcell@gmail.com</a></p>
               </div>
               </div>
@@ -50,8 +50,8 @@
                   </p>
                 </div>
                 <div class="demo-github flex">
-                  <p><a href="https://github.com/TravisPurcell" target="_blank"><img class="github" src="<?php echo get_template_directory_uri(); ?>/dist/images/github.png" alt="Go to Github profile"/></a></p>
-                  <p class="description"><a class="description" href="https://github.com/TravisPurcell" target="_blank">See the Code.</a></p>
+                  <p><a href="https://github.com/TravisPurcell/Portfolio/tree/main/themes/portfolio" target="_blank"><img class="github" src="<?php echo get_template_directory_uri(); ?>/dist/images/github.png" alt="Go to Github profile"/></a></p>
+                  <p class="description"><a class="description" href="https://github.com/TravisPurcell/Portfolio/tree/main/themes/portfolio" target="_blank">See the Code.</a></p>
               </div>
               </div>
             </div>
