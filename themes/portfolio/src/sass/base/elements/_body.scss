@@ -21,7 +21,7 @@ html {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
     .fullScreen {
         display: none;
     }
@@ -36,7 +36,7 @@ section {
 }
 
 .hero {
-    background-image: url('http://portfolio.test/wp-content/uploads/2021/09/hero-1-scaled.jpg');
+    background-image: url('https://tnp-portfolio.com/wp-content/uploads/2021/10/hero-scaled.jpg');
     min-height: 800px;
     background-attachment: fixed;
     background-position: center;
@@ -52,7 +52,7 @@ section {
         margin-bottom: 2em;
     }
 
-    @media (max-width: 1399px) {
+    @media (max-width: 992px) {
         display: none;
     }
 }
