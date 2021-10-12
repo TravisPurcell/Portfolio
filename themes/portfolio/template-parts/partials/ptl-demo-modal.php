@@ -44,9 +44,9 @@
                 <div>
                   <p class="description">
                     This demo exemplifies PHP form handling, as well as storing, accessing &amp; displaying data via JSON and PHP.<br>
-                    1. Select your profession, state and yearse of experience.<br>
+                    1. Select your profession, state and years of experience.<br>
                     2. Your inputs query the JSON PHP data structure to determine your suggested salary.<br>
-                    3. Once the page reloads, your information will be displayed, and an email with said information will be sent to you.
+                    3. Once the page reloads, your results will be displayed
                   </p>
                 </div>
                 <div class="demo-github flex">
