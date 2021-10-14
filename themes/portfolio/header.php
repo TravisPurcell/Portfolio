@@ -12,7 +12,7 @@
 ?>
 
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html ng-app <?php language_attributes(); ?>>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,6 +31,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 
@@ -41,16 +43,6 @@
 	<!-- <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fingreens' ); ?></a> -->
 
 <header id="masthead" class="header__main site-header">
-
-	<?php
-		if ( is_single() ) :
-	?>
-		<div class="myBar" id="myBar">
-			<div class="myBar__progress" id="myBar__progress"></div>
-		</div> 
-	<?php 
-		endif; 
-	?>
 
 	<!-- Swap class names and ptl file names boxes should be anchors -->
 	<!--Replace hero wrapper with content from nav buttons -->
@@ -67,21 +59,16 @@
 					<div class="nav-wrapper">
 						<?php wp_nav_menu( array( 'theme_location' => 'menu-main' ) ); ?>
 					</div>
-					<div class="logo-wrapper">
-						<h1 class="logo">
-							<span>.travisPurcell<br class="visible-xs"> { Developer } </span>
-							<p class="logo__subtitle">A Portfolio Site</p>
-						</h1>
-						<div class="hero-modal">
-							<?php include get_template_directory() . "/template-parts/partials/ptl-demo-modal.php"?>
-						</div>
+				</div>
+				<div class="col col-xs-12">
+					<div class="version-menu-wrapper">
+						<p class="version-menu"><a href="/">View the Standard Version</a></p>
+						<p class="version-menu"><a href="/angularjs">View the Angular Version</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-
 
 </header><!-- #masthead -->
 
