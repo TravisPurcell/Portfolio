@@ -69,7 +69,7 @@
 					</div>
 					<div class="logo-wrapper">
 						<h1 class="logo">
-							<span>.travisPurcell<br class="visible-xs"> { Programmer } </span>
+							<span>.travisPurcell<br class="visible-xs"> { Developer } </span>
 							<p class="logo__subtitle">A Portfolio Site</p>
 						</h1>
 						<div class="hero-modal">
