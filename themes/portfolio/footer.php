@@ -23,7 +23,7 @@
 				</div>
 			</div>
 		</div>
-	</header><!-- #masthead -->
+	</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
