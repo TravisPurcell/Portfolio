@@ -156,7 +156,7 @@ jQuery(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/travispurcell/vagrant-local/www/portfolio/public_html/wp-content/themes/portfolio/src/js/custom/bundle.js */"./src/js/custom/bundle.js");
+module.exports = __webpack_require__(/*! /Users/travispurcell/vvv-local/www/portfolio/public_html/wp-content/themes/portfolio/src/js/custom/bundle.js */"./src/js/custom/bundle.js");
 
 
 /***/ })
