@@ -2,12 +2,12 @@
 <div class="modal fade" id="frontModal" tabindex="-1" role="dialog" aria-labelledby="frontModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="container-fluid grid">
-        <div class="row">
-          <div class="col-xs-12 col-sm-2 sidebar_wrapper">
+      <div class="container-fluid grid padding-none-left">
+        <div class="row flex">
+          <div class="col-xs-12 col-sm-3 sidebar_wrapper">
               <?php include get_template_directory() . "/template-parts/partials/ptl-dashboard-sidebar.php"?>
           </div>
-          <div class="col-xs-12 col-sm-10">
+          <div class="col-xs-12 col-sm-9">
 
             <!--Intro Content-->
             <div class="modalChoiceIntro modalChoice active">

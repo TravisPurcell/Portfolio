@@ -4,21 +4,12 @@ html {
 
 h1 {
     text-align: center;
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 40px;
+    font-size: 4rem;
     color: $color__body;
     font-family: $font__headline;
     line-height: 1;
     margin-bottom: .5em;
-
-    a {
-        font-size: 32px;
-        font-size: 3.2rem;
-        color: $color__text-main;
-        font-family: $font__alianza;
-        line-height: 1;
-        margin-bottom: 1.5em;
-    }
 }
 
 h2 {
@@ -76,8 +67,8 @@ p, a {
 @media (min-width: 768px) {
 
     h1 {
-        font-size: 36px;
-        font-size: 3.6rem; 
+        font-size: 55px;
+        font-size: 5.5rem; 
     }
 
     h2 {
@@ -99,8 +90,31 @@ p, a {
 @media (min-width: 992px) {
 
     h1 {
-        font-size: 40px;
-        font-size: 4rem; 
+        font-size: 60px;
+        font-size: 6rem; 
+    }
+
+    h2 {
+        font-size: 34px;
+        font-size: 3.4rem; 
+    }
+
+    h3, h3 a {
+        font-size: 30px;
+        font-size: 3rem; 
+    }
+
+    p, a {
+        font-size: 20px;
+        font-size: 2rem; 
+    }
+}
+
+@media (min-width: 1200px) {
+
+    h1 {
+        font-size: 70px;
+        font-size: 7rem; 
     }
 
     h2 {
