@@ -2,7 +2,10 @@
 ------------------------------*/
 
 .nopadding {
-    padding: 0 !important;
+
+    @media (min-width: 768px) {
+        padding: 0 !important;
+    }
 }
 
 .row {
