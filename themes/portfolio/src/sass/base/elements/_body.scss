@@ -24,21 +24,11 @@ html {
     }
 }
 
-.fullScreen {
-    padding-top: 7.5em;
-    height: 75vh;
-    background-color: #fff;
-
-    p {
-        font-size: 24px;
-        font-size: 2.4rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .fullScreen {
-        display: none;
-    }
+.screen {
+    background-color: rgba(153,153,255,.4);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -63,48 +53,6 @@ body {
     }
 }
 
-.angular {
-    background-image: url('https://tnp-portfolio.com/wp-content/uploads/2021/10/hero-scaled.jpg');
-    min-height: 800px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-
-    .display-block {
-        display: block;
-    }
-
-    .nav-wrapper {
-        margin-bottom: 2em;
-    }
-
-    .form {
-        text-align: center;
-        font-size: 30px;
-        font-size: 3rem;
-
-        input {
-            text-align: center;
-            border-radius: 5px;
-            color: $color__text-main;
-            border: 2px solid $color__bg;
-        }
-    }
-
-    .hint {
-        font-size: 14px;
-        font-size: 1.4rem;
-        color: #fff;
-        margin: .5em 0;
-    }
-
-    @media (max-width: 992px) {
-        display: none;
-    }
-}
-
 section {
     padding: 4em 0;
 }
@@ -112,24 +60,16 @@ section {
 /* Logo 
 -------------------------*/
 
-.angular {
+.main {
 
     .col {
       padding: 0;
     }
-
-    .screen {
-        background-color: rgba(36, 36, 36, 0.4);
-        min-height: 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
   
     .logo {
       text-decoration: none;
-      margin: 0 0 .5em;
-  
+      margin: 0 0 2.5em;
+
       &-wrapper {
         
         .header-subtext {
@@ -140,12 +80,7 @@ section {
       span {
         animation-name: lighting;
         animation-duration: 3s;
-        text-shadow: 0 0 10px $color__gray;
-      }
-  
-      @keyframes lighting {
-        0%  {opacity: 0.3; text-shadow: 0}
-        100% {opacity: 1; text-shadow: 0 0 10px $color__body;}
+        text-shadow: 0 0 10px $color__black;
       }
       
       &:hover {
@@ -162,13 +97,13 @@ section {
         color: $color__body;
         font-size: 20px;
         font-size: 2rem;
-        font-family: $alianza;
+        font-family: $font__alianza;
         font-weight: bold;
         margin-top: .5em;
-        text-shadow: 0 0 10px $color__gray;
+        text-shadow: 0 0 10px $color__black;
   
         &.active {
-          color: $color__blue;
+          color: $color__black;
         }
       }
     }
@@ -178,53 +113,53 @@ section {
     }
   }
   
-  @media (min-width: 768px) {
-  
-    .angular {
-  
-      .logo {
-        font-size: 45px;
-        font-size: 4.5rem;
-  
-        &__subtitle {
-          font-size: 25px;
-          font-size: 2.5rem;
-        }
+@media (min-width: 768px) {
+
+  .main {
+
+    .logo {
+      font-size: 45px;
+      font-size: 4.5rem;
+
+      &__subtitle {
+        font-size: 25px;
+        font-size: 2.5rem;
       }
     }
   }
-  
-  @media (min-width: 992px) {
-  
-    .angular {
-  
-      .logo {
-        font-size: 62px;
-        font-size: 6.2rem;
-  
-        &__subtitle {
-          font-size: 30px;
-          font-size: 3rem;
-        }
+}
+
+@media (min-width: 992px) {
+
+  .main {
+
+    .logo {
+      font-size: 62px;
+      font-size: 6.2rem;
+
+      &__subtitle {
+        font-size: 30px;
+        font-size: 3rem;
       }
     }
   }
-  
-  @media (min-width: 1200px) {
-  
-    .angular {
-  
-      .logo {
-        font-size: 80px;
-        font-size: 8rem;
-  
-        &__subtitle {
-          font-size: 35px;
-          font-size: 3.5rem;
-        }
+}
+
+@media (min-width: 1200px) {
+
+  .main {
+
+    .logo {
+      font-size: 80px;
+      font-size: 8rem;
+
+      &__subtitle {
+        font-size: 35px;
+        font-size: 3.5rem;
       }
     }
   }
+}
 
 /* Modal 
 -------------------------*/
@@ -237,7 +172,7 @@ section {
     }
 
     &-content {
-        background-color: $color__bg;
+        background-color: $color__body;
     }
 
     &-title {
@@ -251,7 +186,7 @@ section {
     &-body {
         padding: 2em 3em;
         border: none;
-        border-top: 1px solid $color__gray;
+        border-top: 1px solid $color__black;
     }
 
     &-footer {
@@ -324,7 +259,7 @@ section {
 }
 
 .modal-footer {
-    border-top: 1px solid $color__lgray;
+    border-top: 1px solid $color__modal-border;
 }
 
 .moda-footer.flex {
@@ -395,8 +330,8 @@ section {
             font-size: 20px;
             font-size: 2rem;
             border: none;
-            border-bottom: 2px solid $color__bg-alt;
-            background-color: $color__bg;
+            border-bottom: 2px solid $color__black;
+            background-color: $color__body;
             color: $color--text-main;
             margin-top: 0;
         }
@@ -410,8 +345,8 @@ section {
             color: #fff;
             font-size: 20px;
             font-size: 2rem;
-            background-color: $color__cta;
-            border: 3px solid $color__cta;
+            background-color: $color__black;
+            border: 3px solid $color__black;
             border-radius: 2px;
             padding: .35em 2em .5em;
             opacity: 0.75;
@@ -437,7 +372,7 @@ section {
         flex-basis: 30%;
         padding: 1em;
         margin-bottom: 2em;
-        background-color: $color__panel;
+        background-color: $color__red;
         border-radius: 15px;
         opacity: 0.7;
 
@@ -519,7 +454,7 @@ section {
         font-weight: bold;
 
         &:hover {
-            color: $color__panel;
+            color: $color__red;
         }
     }
 }
