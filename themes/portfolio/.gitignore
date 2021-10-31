@@ -1,3 +1,6 @@
 .DS_Store
 node_modules
 sass_cache
+_style-orig-rtl.css
+style-original-backup.css
+dist/css/style.css
