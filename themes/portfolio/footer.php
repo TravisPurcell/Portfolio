@@ -12,7 +12,7 @@
 
 	<footer id="footer" class="site-footer">
 		<div class="container-fluid full">
-			<div class="row flex">
+			<div class="row">
 				<div class="col-xs-12">
 					<div class="logo-container__footer">
 						<div class="contactInfo">
