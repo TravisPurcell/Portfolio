@@ -1,4 +1,6 @@
 .DS_Store
+bundled
+dist/
 node_modules
 sass_cache
 _style-orig-rtl.css
