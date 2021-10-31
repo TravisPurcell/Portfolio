@@ -13,7 +13,7 @@
 	<footer id="footer" class="site-footer">
 		<div class="container-fluid full">
 			<div class="row flex">
-				<div class="col-12">
+				<div class="col-xs-12">
 					<div class="logo-container__footer">
 						<div class="contactInfo">
 							<p><a href="https://github.com/TravisPurcell" target="_blank"><img class="github" src="<?php echo get_template_directory_uri(); ?>/dist/images/github.png" alt="Go to Github profile"/></a></p>
