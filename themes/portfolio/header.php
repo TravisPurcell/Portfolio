@@ -55,7 +55,7 @@
 				<div class="col-xs-12">
 					<div class="version-menu-wrapper">
 						<p class="version-menu">
-							<a href="https://travispurcell.github.io/portfolio-ng">View the Angular Version</a>
+							<!-- <a href="https://travispurcell.github.io/portfolio-ng">View the Angular Version</a> -->
 							<!-- <a class="experience" href="#">View My Experience</a> -->
 						</p>
 					</div>
