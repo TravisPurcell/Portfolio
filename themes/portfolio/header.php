@@ -54,7 +54,7 @@
 				</div>
 				<div class="col col-xs-12">
 					<div class="version-menu-wrapper">
-						<p class="version-menu"><a href="/angularjs">View the Angular Version</a></p>
+						<p class="version-menu"><a href="https://travispurcell.github.io/portfolio-ng">View the Angular Version</a></p>
 					</div>
 				</div>
 			</div>
