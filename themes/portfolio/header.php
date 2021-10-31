@@ -40,15 +40,9 @@
 	<div id="page" class="site">
 	<!-- <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fingreens' ); ?></a> -->
 
+<div class="screen">
+
 <header id="masthead" class="header__main site-header">
-
-	<!-- Swap class names and ptl file names boxes should be anchors -->
-	<!--Replace hero wrapper with content from nav buttons -->
-
-	<div class="fullScreen">
-		<p>This site is a Work in Progress.</p>
-		<p>Please view on a desktop or laptop (for now).</p>
-	</div>
 
 	<section class="hero" id="hero">
 		<div class="container-fluid grid nopadding">
@@ -60,7 +54,6 @@
 				</div>
 				<div class="col col-xs-12">
 					<div class="version-menu-wrapper">
-						<p class="version-menu"><a href="/">View the Standard Version</a></p>
 						<p class="version-menu"><a href="/angularjs">View the Angular Version</a></p>
 					</div>
 				</div>

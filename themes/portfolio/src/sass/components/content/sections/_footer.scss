@@ -3,12 +3,12 @@
 
 footer {
     background-color: $color__footer;
-    border-top: 5px solid $color__bg-alt;
+    border-top: 5px solid $color__black;
 
     .logo {
         color: $color__text-main;
         font-size: 45px;
-        font-family: $alianza;
+        font-family: $font__alianza;
         line-height: 1;
       
         &:hover {
@@ -16,13 +16,13 @@ footer {
         }
       
         &__subtitle {
-          color: $color__blue;
+          color: $color__black;
           font-size: 20px;
-          font-family: $alianza;
+          font-family: $font__alianza;
           font-weight: bold;
       
           &.active {
-            color: $color__blue;
+            color: $color__black;
           }
         }
       }
