@@ -4,23 +4,14 @@ html {
 
 .site {
     background-image: url('https://tnp-portfolio.com/wp-content/uploads/2021/10/hero-scaled.jpg');
-    min-height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
 
-    .display-block {
-        display: block;
-    }
-
     .nav-wrapper {
         margin-bottom: 2em;
-    }
-
-    @media (max-width: 992px) {
-        display: none;
     }
 }
 
@@ -29,28 +20,6 @@ html {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-body {
-    background-image: url('https://tnp-portfolio.com/wp-content/uploads/2021/10/hero-scaled.jpg');
-    min-height: 800px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-
-    .display-block {
-        display: block;
-    }
-
-    .nav-wrapper {
-        margin-bottom: 2em;
-    }
-
-    @media (max-width: 992px) {
-        display: none;
-    }
 }
 
 section {
@@ -62,13 +31,11 @@ section {
 
 .main {
 
-    .col {
-      padding: 0;
-    }
-  
     .logo {
       text-decoration: none;
       margin: 0 0 2.5em;
+      font-size: 40px;
+      font-size: 4rem;
 
       &-wrapper {
         
@@ -78,20 +45,9 @@ section {
       }
   
       span {
-        animation-name: lighting;
-        animation-duration: 3s;
         text-shadow: 0 0 10px $color__black;
       }
       
-      &:hover {
-        color: $color__body;
-      }
-  
-      &.active {
-        color: $color__text-main;
-        text-shadow: 0 0 10px $color__body;
-      }
-  
       &__subtitle {
         text-align: center;
         color: $color__body;
@@ -118,8 +74,8 @@ section {
   .main {
 
     .logo {
-      font-size: 45px;
-      font-size: 4.5rem;
+      font-size: 55px;
+      font-size: 5.5rem;
 
       &__subtitle {
         font-size: 25px;
@@ -184,7 +140,7 @@ section {
     }
 
     &-body {
-        padding: 2em 3em;
+        padding: 1em 0;
         border: none;
         border-top: 1px solid $color__black;
     }
@@ -213,7 +169,7 @@ section {
         }
 
         &-dialog {
-            min-width: 500px;
+            min-width: 675px;
         }
     }
 
@@ -230,6 +186,10 @@ section {
     }
 
     @media (min-width: 1200px) {
+
+        &-body {
+            padding: 2em 3em;
+        }
 
         &-title {
             font-size: 28px;
@@ -272,8 +232,23 @@ section {
 
 .modalChoiceClients {
 
-    .clientContent {
-        padding: 3em;
+    img {
+        transform: scale(0.7);
+    }
+}
+
+.clientContent {
+
+    a {
+        max-width: 300px;
+        background-color: $color__pink-red;
+        border-radius: 10px;
+        padding: 2em 0;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -285,12 +260,16 @@ section {
 -------------------------*/
 
 .dashboard {
-    padding: 1.5em 1em 1em;
+    padding: 1.5em 0;
+
+    @media (min-width: 768px) {
+        padding: 1.5em 1em 1em;
+    }
 
     .description {
         font-size: 20px;
         font-size: 2rem;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     h2 {
@@ -305,15 +284,21 @@ section {
         margin-bottom: 4em;
 
         form {
-            display: flex;
-            max-width: 490px;
-            flex-wrap: wrap;
+
+            @media (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            @media (min-width: 992px) {
+                max-width: 490px;
+            }
         }
 
         fieldset {
             display: flex;
             flex-direction: column;
-            margin-right: 3em;
+            margin: 0 3em 2em 0;
 
             &.email {
                 flex-basis: 100%;
@@ -363,18 +348,33 @@ section {
         justify-content: space-between;
 
         &.flex {
-            display: flex;
+            display: block;
+
+            @media (min-width: 992px) {
+                display: flex;
+            }
         }
     }
 
     .panel {
         display: flex;
-        flex-basis: 30%;
         padding: 1em;
-        margin-bottom: 2em;
         background-color: $color__red;
         border-radius: 15px;
         opacity: 0.7;
+        max-width: 250px;
+        margin: 0 0 2em;
+        flex-basis: 100%;
+
+        @media (min-width: 992px) {
+            margin: 0 auto 2em;
+            max-width: 280px;
+        }
+
+        @media (min-width: 1200px) {
+            flex-basis: 30%;
+            margin: 0 0 2em;
+        }
 
         &.opague {
             opacity: 1;
@@ -421,7 +421,10 @@ section {
         }
 
         .profession {
-            margin-left: 1em;
+
+            @media (min-width: 1200px) {
+                margin-left: 1em;
+            }
         }
 
         p {
@@ -431,10 +434,19 @@ section {
 }
 
 .contactInfo {
+
+    &.flex {
+        display: flex;
+        align-items: center;
+    }
     
     p {
         text-align: center;
     }
+}
+
+.github {
+    transform: scale(.7);
 }
 
 .demo-github {

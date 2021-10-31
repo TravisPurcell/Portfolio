@@ -2,11 +2,22 @@
 ------------------------------*/
 
 .nopadding {
-    padding: 0;
+    padding: 0 !important;
+}
+
+.row {
+    display: block;
+}
+
+.row.flex {
+    display: flex;
 }
 
 .padding-none-left {
-    padding-left: 0;
+
+    @media (min-width: 768px) {
+        padding-left: 0 !important;
+    }
 }
 
 .col-full {
