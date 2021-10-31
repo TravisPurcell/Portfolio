@@ -1,4 +1,4 @@
-<div class="container-fluid grid nopadding">
+<div class="container-fluid grid">
     <div class="row">
         <div class="modalChoiceIntro modalChoice active col-xs-12">
             <?php include get_template_directory() . "/template-parts/partials/ptl-intro-content.php"?>
