@@ -2,31 +2,21 @@
 /* # Header
 ------------------------------*/
 
+header {
+  padding: 1em 0;
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
 .logo-container__header, .logo-container__footer {
   margin: 1em 0 0;
 }
 
-.version-menu-wrapper {
-  display: flex;
-  justify-content: center;
-  max-width: 550px;
-  margin: 0 auto;
+.logo__subtitle {
+  color: #fff;
+  margin: 0;
 }
 
-.version-menu {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 
-  a {
-    color: $color--text-main;
-    margin-bottom: 1em;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
 
 /*End*/
 

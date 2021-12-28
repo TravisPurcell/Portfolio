@@ -1,5 +1,6 @@
 .menu {
-    padding: 3em 0 0;
+  display: flex;
+  margin-bottom: 0;
 
     li {
       list-style-type: none;
@@ -15,15 +16,20 @@
       a {
         cursor: pointer;
         text-align: center;
-        color: #000;
-        font-size: 45px;
-        font-size: 4.5rem;
+        color: #fff;
+        font-weight: normal;
+        font-size: 25px;
+        font-size: 2.5rem;
         border-bottom: none;
         font-family: $font__ubuntu;
-        letter-spacing: 5px;
 
-        &:active, &:focus, &:hover {
-          border-bottom: 4px solid #fff;
+        &:link, &:visted {
+          color: #fff;
+        }
+      
+        &:hover, &:active, &:focus {
+          color: #fff;
+          text-decoration: underline;
         }
       }
     }
@@ -35,6 +41,33 @@
     &.active {
         background-color: $color__black;
     }
+  }
+}
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-wrapper {
+  align-self: end;
+}
+
+@media (min-width: 768px) {
+
+  .menu-wrapper {
+    
+  }
+}
+
+@media (min-width: 992px) {
+  
+}
+
+@media (min-width: 1200px) {
+
+    .menu-wrapper {
+      max-width: 850px;
   }
 }
 

@@ -4,7 +4,7 @@
 jQuery(document).ready(function(){
 
 	/* Toggle Demo Modal */
-	jQuery(".demo a").click(function(){
+	jQuery(".demo").click(function(){
 		jQuery("#frontModal").modal("toggle");
 	});
 

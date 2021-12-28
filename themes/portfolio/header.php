@@ -44,25 +44,29 @@
 
 <header id="masthead" class="header__main site-header">
 
-	<section class="hero" id="hero">
 		<div class="container-fluid grid">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="menu-wrapper">
+					<div class="logo-wrapper">
+						<h1 class="logo">
+							<span>.travisPurcell<br class="visible-xs"> { Developer } </span>
+							<p class="logo__subtitle">A Portfolio Site</p>
+						</h1>
+						<div class="hero-modal">
+							<?php include get_template_directory() . "/template-parts/partials/ptl-demo-modal.php"?>
+						</div>
+					</div>
 					<div class="nav-wrapper">
 						<?php wp_nav_menu( array( 'theme_location' => 'menu-main' ) ); ?>
 					</div>
-				</div>
-				<div class="col-xs-12">
-					<div class="version-menu-wrapper">
-						<p class="version-menu">
-							<!-- <a href="https://travispurcell.github.io/portfolio-ng">View the Angular Version</a> -->
-							<!-- <a class="experience" href="#">View My Experience</a> -->
-						</p>
+					<div class="logo-wrapper">
+						<div class="hero-modal">
+							<?php include get_template_directory() . "/template-parts/partials/ptl-demo-modal.php"?>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
 
 </header><!-- #masthead -->
 
